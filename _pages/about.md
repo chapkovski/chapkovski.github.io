@@ -20,4 +20,5 @@ social: true  # includes social icons at the bottom of the page
 
 I am a post-doctoral researcher at the Institute for Applied Microeconomics in the University of Bonn.
 
-I study  effect of collective sanctions on corruption; tax evasion; interregional trust; risk taking; falsification of political preferences; and the use of crowdsourcing platforms for behavioral experiments.
+My current research project concerns **information avoidance**: a puzzling sociological phenomenon when people prefer knowing less information, even if the rational behavior dictates the opposite. In particular I am interested in interaction of information avoidance with **affective polarization**, when people discriminate against those who hold opposite political views
+

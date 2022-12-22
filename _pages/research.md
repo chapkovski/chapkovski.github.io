@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /research/
-title: research
+permalink: /publications/
+title: publications
 description: Some of my recent publications
 years: [2022, 2021, 2019, 2017]
 nav: true
