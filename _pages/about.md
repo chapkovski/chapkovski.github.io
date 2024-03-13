@@ -9,8 +9,10 @@ profile:
   image: chapkovski_photo_small.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Adenauerallee 24–42,</p>
-    <p> 53113 Bonn, Germany</p>
+    <p>University of Duisburg-Essen</p>
+    <p>Faculty of Social Sciences, Institute of Political Science</p>
+    <p>Lotharstr. 65</p>
+    <p>47057 Duisburg</p>
    
 
 news: true  # includes a list of news items
