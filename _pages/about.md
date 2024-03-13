@@ -22,5 +22,5 @@ I am a post-doctoral researcher at the University of Duisburg-Essen,
     Faculty of Social Sciences, Institute of Political Science, in the 
     [POLITSOLID](https://achimgoerres.de/politsolid) ERC project. 
 
-My current research project concerns **information avoidance**: a puzzling sociological phenomenon when people prefer knowing less information, even if the rational behavior dictates the opposite. In particular I am interested in interaction of information avoidance with **affective polarization**, when people discriminate against those who hold opposite political views
+My current research project concerns **information avoidance**: a puzzling sociological phenomenon when people prefer knowing less information, even if the rational behavior dictates the opposite. In particular I am interested in interaction of information avoidance with **affective polarization**, when people discriminate against those who hold opposite political views.
 
