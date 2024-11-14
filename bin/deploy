@@ -66,4 +66,47 @@ fi
 # Check if there are any untracked files
 if ! test -z "$(git ls-files --exclude-standard --others)"; then
     echo "There are untracked files:"
-    git ls-files --exclude-standard --
+    git ls-files --exclude-standard --others
+    echo "Please commit those files or stash them before proceeding."
+    echo "Aborting."
+    [[ "$0" = "$BASH_SOURCE" ]] && exit 1 || return 1
+fi
+
+# Switch to source branch (creates it if necessary from the current branch)
+if git show-ref --quiet refs/heads/$SRC_BRANCH; then
+    git checkout $SRC_BRANCH
+else
+    git checkout -b $SRC_BRANCH
+fi
+
+# Checkout and prepare DEPLOY_BRANCH
+if git show-ref --quiet refs/heads/$DEPLOY_BRANCH; then
+  git branch -D $DEPLOY_BRANCH
+fi
+git checkout -b $DEPLOY_BRANCH
+
+# Export JEKYLL_ENV=production
+export JEKYLL_ENV=production
+
+# Build site
+bundle exec jekyll build
+
+# Delete and move files
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name 'CNAME' ! -name '.gitignore' -exec rm -rf {} \;
+mv _site/* .
+rm -R _site/
+
+# Create `.nojekyll` file (bypass GitHub Pages Jekyll processing)
+touch .nojekyll
+
+# Push to DEPLOY_BRANCH
+git add -fA
+git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
+[[ -z "$NO_PUSH" ]] && git push -f -q origin $DEPLOY_BRANCH
+
+# Move back to SRC_BRANCH
+git checkout $SRC_BRANCH
+
+echo "Deployed successfully!"
+
+exit 0
