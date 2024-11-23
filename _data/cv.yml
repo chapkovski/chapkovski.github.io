@@ -2,31 +2,33 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Philipp Chapkovski
     - name: Languages
-      value: English, German
+      value: English, German, Italian, Russian
+    - name: Location
+      value: Berlin, Germany
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Ph.D.
+      institution: <a href='https://www.eui.eu'>European University Institute</a>
+      location: Florence, Italy
+      year: 2018
+      department: <a href='https://www.eui.eu/en/academic-units/political-and-social-sciences'>Sociology and Political Science</a>
+      maindescription: "<b>Dissertation</b>: <a href='https://cadmus.eui.eu/handle/1814/58424'><i>Collective Sanctions. An experimental approach</i></a"
+    - title: Master degree
+      institution: European University at St. Petersburg
+      location: St. Petersburg, Russia
+      year: 2012
+      department: Social and Political Sciences
+      maindescription: "<b>MA Thesis</b>: <i>\"Analysis of Social Networks of Russian Federal Elites in 2000-2008\"</i>"
+    - title: Bachelor degree
+      institution: University of Ca'Foscari
+      location: Venice, Italy
+      year: 2010
+      department: Economics
+      maindescription: "<b>BA Thesis</b>: <i>\"Micro-consequences of Pension System Reforms in Post-Soviet Countries\""
 
 - title: Experience
   type: time_table
