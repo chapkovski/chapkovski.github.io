@@ -52,37 +52,43 @@
       institution: Comparative Life Course and Inequality Research Centre, European University Institute, Italy
       year: "09/2013 - 05/2014"
 
-- title: Teaching
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Grants
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
+# - title: Teaching
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Behavioral Economics
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Information avoidance and its impact on decision-making.
+        - The role of social norms and sanctions in cooperative behavior.
+        - Experimental studies on market designs and dynamics of market bubbles.
+    - title: Political Psychology
       items:
-        - Description 1.
-        - Description 2.
+        - Polarization and its effects on workplace collaboration.
+        - Public attitudes toward lithium mining and green transitions.
+        - The impact of political alignment on information sharing and engagement.
+    - title: Experimental Methodologies
+      items:
+        - Development of virtual states to study redistributive preferences.
+        - Use of longitudinal and vignette-based experiments for causal inference.
+        - Gamification effects in behavioral experiments.
+- title: Grants
+  type: time_table
+  contents:
+    - year: 2024
+      items:
+        - "<b>Gorilla and Prolific Grant</b>: Study on political alignment and engagement in collaborative word encryption tasks using Gorilla's Multiplayer tools"
+    - year: 2017
+      items:
+        - First Prize at the Conference/Hackathon "Experimental Methods in Sociology Using oTree" in WZB Berlin Social Science Center
+        - "Grant for innovating teaching \"Lehrkredit,\" University of Zurich: \"Using Mobile Lab in Teaching Analytical Sociology\""
+
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Saltwater and freshwater aquariums, especially with crustaceans; scale modeling.
