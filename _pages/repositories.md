@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Most of my experimental designs and data used in teaching are available in my Github
+description: Most of my experimental designs and data used for teaching are available on my GitHub.
 nav: true
 nav_order: 4
 ---

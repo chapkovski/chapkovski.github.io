@@ -63,19 +63,20 @@
   contents:
     - title: Behavioral Economics
       items:
-        - Information avoidance and its impact on decision-making.
-        - The role of social norms and sanctions in cooperative behavior.
-        - Experimental studies on market designs and dynamics of market bubbles.
+        - Information avoidance and its effects on decision-making processes.
+        - Social norms and sanctioning mechanisms in fostering cooperative behavior.
+        - Experimental research on trading platform designs and retail investor behavior.
     - title: Political Psychology
       items:
-        - Polarization and its effects on workplace collaboration.
-        - Public attitudes toward lithium mining and green transitions.
-        - The impact of political alignment on information sharing and engagement.
+        - Polarization and its influence on workplace collaboration.
+        - The role of political alignment in information sharing and engagement.
+        - Impact of conflict and government quality on redistributive preferences.
     - title: Experimental Methodologies
       items:
-        - Development of virtual states to study redistributive preferences.
-        - Use of longitudinal and vignette-based experiments for causal inference.
-        - Gamification effects in behavioral experiments.
+        - Longitudinal and vignette-based experiments for causal analysis.
+        - Mobile experience sampling methods (MESM).
+        - Real-time interactions in online experiments.
+        - Data quality factors such as participant attention and time-on-task behavior.
 - title: Grants
   type: time_table
   contents:
