@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.uni-due.de/politik/chapkovski.php'>Univerity of Duisburg-Essen</a>, ERC project <a href='https://achimgoerres.de/politsolid'>POLITSOLID</a>
+subtitle: <a href='https://www.uni-due.de/politik/chapkovski.php'>University of Duisburg-Essen</a>, ERC project <a href='https://achimgoerres.de/politsolid'>POLITSOLID</a>
 
 profile:
   align: right
