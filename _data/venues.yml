@@ -1,6 +1,70 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"MS":
+  url: https://pubsonline.informs.org/journal/mnsc
+  color: "#315f72"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"JPE":
+  url: https://www.sciencedirect.com/journal/journal-of-public-economics
+  color: "#506d45"
+
+"PC":
+  url: https://link.springer.com/journal/11127
+  color: "#6a5a8c"
+
+"THRI":
+  url: https://dl.acm.org/journal/thri
+  color: "#4b657a"
+
+"JBEF":
+  url: https://www.sciencedirect.com/journal/journal-of-behavioral-and-experimental-finance
+  color: "#4f6f62"
+
+"JBEE":
+  url: https://www.sciencedirect.com/journal/journal-of-behavioral-and-experimental-economics
+  color: "#6f624f"
+
+"SR":
+  url: https://www.nature.com/srep/
+  color: "#5d6b7a"
+
+"R\\&P":
+  url: https://journals.sagepub.com/home/rap
+  color: "#7a5662"
+
+"PLOS":
+  url: https://journals.plos.org/plosone/
+  color: "#5d6f4f"
+
+"FIP":
+  url: https://www.frontiersin.org/journals/psychology
+  color: "#725f42"
+
+"JF":
+  url: https://onlinelibrary.wiley.com/journal/15406261
+  color: "#5b6770"
+
+"JFQA":
+  url: https://www.cambridge.org/core/journals/journal-of-financial-and-quantitative-analysis
+  color: "#596b8a"
+
+"JEP":
+  url: https://www.sciencedirect.com/journal/journal-of-economic-psychology
+  color: "#566f6b"
+
+"BRM":
+  url: https://link.springer.com/journal/13428
+  color: "#6b6b58"
+
+"EJPR":
+  url: https://ejpr.onlinelibrary.wiley.com/
+  color: "#6f5968"
+
+"OSF":
+  url: https://osf.io/
+  color: "#5f6470"
+
+"PM":
+  url: https://www.apa.org/pubs/journals/met
+  color: "#6a5e72"
+
+"WP":
+  color: "#66706b"

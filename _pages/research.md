@@ -4,7 +4,8 @@ permalink: /publications/
 title: publications
 description: Some of my recent publications
 years: [2023, 2022, 2021, 2019, 2017]
-nav: true
+nav: false
+published: false
 nav_order: 1
 ---
 

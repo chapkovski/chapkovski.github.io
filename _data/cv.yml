@@ -1,97 +1,170 @@
+- title: Profile
+  type: list
+  contents:
+    - Postdoctoral researcher in behavioural economics and finance, developing computational experimentation for public policy, financial technology, and AI systems.
+    - Expertise in experimental economics, online and laboratory experiments, trading platforms, causal inference, and computational social science.
+    - Research focuses on financial technology, information avoidance, political polarisation, cooperation, solidarity, and behavioural responses to digital and institutional environments.
+    - Designs behavioural research systems that combine human participants, algorithmic agents, real-time interaction, API-based workflows, and structured behavioural data pipelines.
+
 - title: General Information
   type: map
   contents:
     - name: Full Name
       value: Philipp Chapkovski
-    # - name: Date of Birth
-    #   value: 14th March 1879
+    - name: Position
+      value: Postdoctoral researcher, University of Duisburg-Essen
+    - name: Website
+      value: <a href="https://chapkovski.com">chapkovski.com</a>
+    - name: Email
+      value: <a href="mailto:chapkovski@gmail.com">chapkovski@gmail.com</a>
+    - name: GitHub
+      value: <a href="https://github.com/chapkovski">github.com/chapkovski</a>
     - name: Languages
-      value: English, Russian, Italian
+      value: English - fluent; Italian - fluent; German - professional working proficiency; Russian - native.
+
+- title: Core Methods and Technical Stack
+  type: nested_list
+  contents:
+    - title: Methods
+      items:
+        - Experimental economics, online and laboratory experiments, causal inference, and computational social science.
+        - Policy-relevant behavioural data collection using real-time, multi-user, and longitudinal experimental designs.
+    - title: Analysis
+      items:
+        - Data analysis, data cleaning, and reproducible statistical workflows in Python, R, and Stata.
+        - Git-based version control and reproducible research workflows.
+    - title: Infrastructure
+      items:
+        - FastAPI, oTree, Vue, WebSockets, RabbitMQ, Git/GitHub, and database-backed behavioural logging.
+        - Custom experimental and human-AI research systems with API-based workflows.
+
+- title: Professional Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral researcher in ERC project POLITSOLID
+      institution: Institute for Political Science, University of Duisburg-Essen, Germany
+      year: "03/2024 - present"
+      description:
+        - Designs and analyses experimental and survey-based studies on political solidarity, trust, public-service quality, and behavioural responses to social and political information.
+        - Contributes to Novaland, a virtual-state environment for studying institutional experience, corruption, redistribution, and citizen-state interaction.
+    - title: Postdoctoral researcher
+      institution: Institute for Applied Microeconomics, University of Bonn, Germany
+      year: "10/2022 - 03/2024"
+      description:
+        - Developed online and lab experiments on information avoidance, polarisation, cooperation, and decision-making.
+        - Built custom experimental platforms for real-time multi-user studies and platform-design experiments.
+    - title: Research Fellow, Scholars at Risk program
+      institution: WZB, Berlin Social Science Center, Germany
+      year: "05/2022 - 10/2022"
+    - title: Senior Research Fellow
+      institution: International Laboratory for Experimental and Behavioural Economics, Higher School of Economics, Moscow, Russia
+      year: "09/2018 - 04/2022"
+      description:
+        - Designed online and laboratory experiments on cooperation, information avoidance, tax compliance, and market behaviour.
+        - Developed reusable oTree/Django tools and real-time experimental infrastructure for interactive behavioural studies.
+    - title: Research Fellow
+      institution: Institute of Sociology, University of Zurich, Switzerland
+      year: "10/2016 - 01/2018"
+    - title: Research Assistant
+      institution: Comparative Life Course and Inequality Research Centre, European University Institute, Italy
+      year: "09/2013 - 05/2014"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: European University Institute
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Ph.D. in Sociology and Political Science
+      institution: <a href="https://www.eui.eu">European University Institute</a>
+      location: Florence, Italy
+      year: 2018
+      maindescription: "Dissertation: <a href='https://cadmus.eui.eu/handle/1814/58424'><i>Collective Sanctions and Cooperation. Three Experimental Studies</i></a>. Supervisor: Prof. Diego Gambetta."
+    - title: MA in Social and Political Sciences
+      institution: European University at St. Petersburg
+      location: St. Petersburg, Russia
+      year: 2012
+      maindescription: "MA Thesis: <i>Analysis of Social Networks of Russian Federal Elites 2000-2008</i>."
+    - title: BA in Economics
+      institution: University of Ca' Foscari
+      location: Venice, Italy
+      year: 2010
+      maindescription: "BA Thesis: <i>Micro-consequences of Pension System Reforms in Post-Soviet Countries</i>."
 
-- title: Experience
+- title: Teaching Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: "Polarization and Populism: Causes, Consequences, and Policy Responses"
+      institution: University of Duisburg-Essen
+      year: 2026
+      maindescription: Seminar course for Master's students.
+    - title: "Comparative politics module: Polarization and its behavioral consequences"
+      institution: University of Duisburg-Essen
+      year: 2025
+      maindescription: Seminar course for Bachelor's students.
+    - title: Real-Time Online Behavioral Experiments
+      institution: University of Basel
+      year: 2024
+      maindescription: Workshop for PhD students in organizational psychology.
+    - title: Designing Interactive Experiments with oTree
+      institution: University of Pisa
+      year: 2023
+      maindescription: Workshop.
+    - title: Behavioral Experimental Science Online and in the Lab
+      institution: Summer Institute in Computational Social Science
+      year: 2020
+    - title: Running Behavioral Experiments with oTree
+      institution: IMPRS Uncertainty Summer School, Max Planck Institute for Research on Collective Goods
+      year: 2019
+    - title: Programming Behavioral Experiments
+      institution: European Commission Joint Research Centre
+      year: 2018
+    - title: Social Norms, Control and Punishment
+      institution: University of Zurich
+      year: 2017
+      maindescription: Undergraduate course co-taught with Prof. Heiko Rauhut.
+    - title: Experimental Methods in Political Science
+      institution: Higher School of Economics, St. Petersburg
+      year: 2019
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Grants, Prizes, and Fellowships
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2024
       items:
-        - Description 1.
-        - Description 2.
+        - "<b>Gorilla and Prolific Grant</b>: Study on political alignment and engagement in collaborative word encryption tasks using Gorilla's Multiplayer tools."
+    - year: 2017
+      items:
+        - First Prize at the Conference/Hackathon "Experimental Methods in Sociology Using oTree" at WZB Berlin Social Science Center.
+        - "Grant for innovating teaching \"Lehrkredit,\" University of Zurich: \"Using Mobile Lab in Teaching Analytical Sociology\"."
 
-- title: Other Interests
+- title: Organization and Presentations
+  type: time_table
+  contents:
+    - year: 2025
+      items:
+        - Co-organizer, POLITSOLID Workshop, University of Duisburg-Essen, Germany.
+    - year: 2024
+      items:
+        - "\"Political Polarization in the Workplace: Impact on Team Performance and Information Exchange,\" IMEBESS, Riga, Latvia."
+    - year: 2023
+      items:
+        - "\"The sound of silence: understanding social avoidance in a Russian war context,\" Symposium on Social Science Research in the Context of Conflict, War, and Authoritarianism, London, UK."
+    - year: 2021
+      items:
+        - Co-organizer, International Conference RExCon21 on Social Preferences and Social Norms.
+        - Co-organizer, I Pacific School of Experimental Economics, Vladivostok.
+    - year: 2019
+      items:
+        - Co-organizer, Summer School on Experimental Economics, St. Petersburg.
+
+- title: Journals I Have Reviewed For
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - American Political Science Review
+    - British Journal of Political Science
+    - Comparative Political Studies
+    - European Sociological Review
+    - Journal of Behavioral and Experimental Economics
+    - Journal of Behavioral and Experimental Finance
+    - Behavior Research Methods
+    - Democratization
+    - Europe-Asia Studies
+    - Media, War & Conflict
