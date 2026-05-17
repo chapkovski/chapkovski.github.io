@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://chapkovski.github.io/sitemap.xml
+Sitemap: https://chapkovski.com/sitemap.xml
