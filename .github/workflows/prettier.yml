@@ -12,23 +12,62 @@ on:
 
 jobs:
   check:
-    # available images: https://github.com/actions/runner-images#available-images
+    # available images: https://github.com/actions/runner-images
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Setup Node.js ⚙️
         uses: actions/setup-node@v4
       - name: Install Prettier 💾
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
+      - name: Collect changed files 📋
+        id: changed-files
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            changed_files=$(git diff --name-only "${{ github.event.pull_request.base.sha }}" "${{ github.event.pull_request.head.sha }}")
+          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            changed_files=$(git diff-tree --no-commit-id --name-only -r "${{ github.sha }}")
+          else
+            changed_files=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")
+          fi
+
+          : > prettier-files.txt
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            case "$file" in
+              *.css|*.html|*.js|*.json|*.liquid|*.md|*.yaml|*.yml) ;;
+              *) continue ;;
+            esac
+            case "$file" in
+              _site/*|blog/*|cv/*|old_posts/*|projects/*|publications/*|repositories/*|wp/*|404.html|feed.xml|index.html|robots.txt|sitemap.xml)
+                continue
+                ;;
+            esac
+            printf '%s\n' "$file" >> prettier-files.txt
+          done <<EOF
+          $changed_files
+          EOF
+
+          if [ -s prettier-files.txt ]; then
+            echo "has_files=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_files=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        if: steps.changed-files.outputs.has_files == 'true'
+        run: |
+          mapfile -t files < prettier-files.txt
+          npx prettier --check "${files[@]}"
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
-        if: ${{ failure() }}
+        if: ${{ failure() && steps.changed-files.outputs.has_files == 'true' }}
         run: |
-          npx prettier . --write
+          mapfile -t files < prettier-files.txt
+          npx prettier --write "${files[@]}"
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
