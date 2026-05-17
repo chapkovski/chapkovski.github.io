@@ -42,11 +42,11 @@ jobs:
   link-checker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
           # removed md files that include liquid tags
-          args: --user-agent 'curl/7.54' --root-dir . --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude 'https?://(www\\.)?reddit\\.com/.*' --exclude 'https://papers\\.ssrn\\.com/.*' --exclude 'https?://www\\.intmath\\.com/.*' --verbose --no-progress './_news/**/*.md' './_pages/**/*.md' './_posts/**/*.md' './_projects/**/*.md'
+          args: --base . --user-agent 'curl/7.54' --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --exclude-path _posts/2023-04-24-videos.md --exclude 'https?://(www\\.)?reddit\\.com/.*' --exclude 'https://papers\\.ssrn\\.com/.*' --exclude 'https?://www\\.intmath\\.com/.*' --verbose --no-progress './_news/**/*.md' './_pages/**/*.md' './_posts/**/*.md' './_projects/**/*.md'
