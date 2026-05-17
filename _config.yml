@@ -249,13 +249,13 @@ exclude:
   - assets/css/main.css.map
   - blog/
   - cv/
-  - feed.xml
   - index.html
   - package.json
   - package-lock.json
   - projects/
   - publications/
   - _pages/about_einstein.md
+  - _posts/2023-07-04-jupyter-notebook.md
   - purgecss.config.js
   - README.md
   - readme_preview/

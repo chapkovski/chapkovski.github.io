@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Install ImageMagick 🖼️
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -43,4 +47,4 @@ jobs:
         with:
           fail: true
           # only check local links
-          args: --offline --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
+          args: --offline --root-dir _site --remap '_site(/?.*)/assets/(.*) _site/assets/$2' --verbose --no-progress '_site/**/*.html'
