@@ -1,15 +1,16 @@
 ---
 layout: page
-title: WEDR
-description: Experimental infrastructure for interactive online behavioural research.
+title: Polarization at Workplace
+description: Experimental infrastructure for studying workplace polarization, information exchange, and team performance.
+img: assets/img/projects/polarization-workplace.svg
 importance: 3
 category: work
 featured: true
 github: https://github.com/chapkovski/wedr
 ---
 
-WEDR is an infrastructure project for building and running interactive behavioural studies online. It supports the kind of research designs that require real-time interaction, reproducible workflows, and detailed behavioural logging rather than static questionnaires alone.
+Polarization at Workplace is an experimental research and infrastructure project focused on how political disagreement affects collaboration, communication, and performance inside teams. It uses interactive online study designs to capture how workplace relationships and information exchange respond to ideological distance.
 
-It sits alongside my broader work with oTree, FastAPI, Vue, WebSockets, queues, and database-backed experimental systems. The focus is on reliability, traceability, and flexible support for multi-user and API-mediated experiments.
+The project combines behavioural experiment design with real-time digital infrastructure. It draws on my broader stack across oTree, FastAPI, Vue, WebSockets, queues, and structured database logging to run reproducible multi-user interactions where timing, partner matching, and message flow are central.
 
-In practice, this project underpins studies on cooperation, information avoidance, political behaviour, and human-AI interaction where timing, sequencing, and structured event data matter.
+In practice, this line of work supports studies on workplace cooperation, polarization, and strategic communication, while also producing reusable tools for organizational and political-behaviour research in interactive online environments.

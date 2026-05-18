@@ -2,6 +2,7 @@
 layout: page
 title: Algotraders
 description: Experimental research on trading-platform design, retail investors, and order-flow data.
+img: assets/img/projects/algotraders.svg
 importance: 2
 category: work
 featured: true

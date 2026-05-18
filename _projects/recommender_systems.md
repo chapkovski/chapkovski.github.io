@@ -2,6 +2,7 @@
 layout: page
 title: Ethical AI in Recommendations
 description: Experimental study of ethical alignment, free-riding, and polarization in recommender systems.
+img: assets/img/projects/recommender-ethics.svg
 importance: 4
 category: work
 featured: true

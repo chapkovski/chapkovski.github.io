@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Polarization at Workplace thumbnail">
+  <defs>
+    <linearGradient id="left" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="right" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f1d1d"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="675" fill="url(#left)"/>
+  <rect x="600" y="0" width="600" height="675" fill="url(#right)"/>
+  <rect x="592" y="0" width="16" height="675" fill="#f8fafc" opacity="0.75"/>
+  <g fill="#f8fafc" opacity="0.22">
+    <circle cx="240" cy="390" r="72"/>
+    <circle cx="400" cy="330" r="54"/>
+    <circle cx="780" cy="360" r="60"/>
+    <circle cx="930" cy="410" r="70"/>
+  </g>
+  <g fill="#ffffff">
+    <text x="80" y="160" font-size="68" font-family="Helvetica, Arial, sans-serif" font-weight="700">Polarization at Workplace</text>
+    <text x="80" y="228" font-size="32" font-family="Helvetica, Arial, sans-serif" opacity="0.95">Collaborative experiments on disagreement, teams, and information exchange</text>
+  </g>
+</svg>

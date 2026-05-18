@@ -2,6 +2,7 @@
 layout: page
 title: Novaland
 description: A virtual-state research environment for studying solidarity, corruption, and citizen-state interaction.
+img: assets/img/projects/novaland.svg
 importance: 1
 category: work
 featured: true
