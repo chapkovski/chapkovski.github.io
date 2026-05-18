@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Novaland thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g opacity="0.2" fill="#99f6e4">
+    <rect x="120" y="220" width="120" height="240" rx="6"/>
+    <rect x="280" y="170" width="140" height="290" rx="6"/>
+    <rect x="460" y="260" width="100" height="200" rx="6"/>
+    <rect x="600" y="200" width="160" height="260" rx="6"/>
+    <rect x="800" y="250" width="110" height="210" rx="6"/>
+    <rect x="950" y="190" width="130" height="270" rx="6"/>
+  </g>
+  <g fill="#ecfeff">
+    <text x="80" y="170" font-size="74" font-family="Helvetica, Arial, sans-serif" font-weight="700">Novaland</text>
+    <text x="80" y="240" font-size="34" font-family="Helvetica, Arial, sans-serif" opacity="0.95">Virtual-state experiments on solidarity and institutions</text>
+  </g>
+</svg>
