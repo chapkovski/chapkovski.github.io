@@ -1,0 +1,108 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+{% assign project_image = page.hero_img | default: page.img %}
+{% assign demo_anchor = page.demo | default: null %}
+
+<div class="project-showcase">
+  <header class="project-showcase__hero">
+    <div class="project-showcase__hero-copy">
+      {% if page.hero_kicker %}
+        <p class="project-showcase__kicker">{{ page.hero_kicker }}</p>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      <p class="project-showcase__lede">{{ page.description }}</p>
+
+      {% if page.badges %}
+        <ul class="project-showcase__badges" aria-label="Project topics">
+          {% for badge in page.badges %}
+            <li>{{ badge }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <div class="project-showcase__actions" aria-label="Project links">
+        {% if page.paper_url %}
+          <a
+            class="project-showcase__button project-showcase__button--primary"
+            href="{{ page.paper_url }}"
+            target="_blank"
+            rel="external nofollow noopener"
+          >
+            <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+            Working paper
+          </a>
+        {% endif %}
+        {% if demo_anchor %}
+          <a class="project-showcase__button" href="#{{ demo_anchor }}-demo">
+            <i class="fa-solid fa-compass" aria-hidden="true"></i>
+            {{ page.hero_cta | default: 'Try the demo' }}
+          </a>
+        {% endif %}
+        {% if page.github %}
+          <a class="project-showcase__button" href="{{ page.github }}" target="_blank" rel="external nofollow noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            Code
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="project-showcase__hero-visual" aria-hidden="true">
+      {% if project_image %}
+        {% include figure.liquid loading="eager" path=project_image sizes="(min-width: 992px) 420px, 100vw" alt=page.title class="project-showcase__hero-img" %}
+      {% endif %}
+      <div class="project-showcase__map-card project-showcase__map-card--services">
+        <span>1</span>
+        Public services
+      </div>
+      <div class="project-showcase__map-card project-showcase__map-card--institutions">
+        <span>2</span>
+        Institutional signal
+      </div>
+      <div class="project-showcase__map-card project-showcase__map-card--solidarity">
+        <span>3</span>
+        Solidarity response
+      </div>
+    </div>
+  </header>
+
+  <article class="project-showcase__body">
+    {{ content }}
+  </article>
+
+  {% if page.demo == 'novaland' %}
+    <section class="project-showcase__demo-section" id="novaland-demo" aria-labelledby="novaland-demo-title">
+      <div class="project-showcase__section-heading">
+        <p class="project-showcase__kicker">Interactive preview</p>
+        <h2 id="novaland-demo-title">Participant journey through Novaland</h2>
+        <p>A static click-through that illustrates the experimental logic. It does not collect data or run the actual study.</p>
+      </div>
+      <div id="novaland-demo-app" class="novaland-demo" data-mounted="false">
+        <p class="novaland-demo__loading">Loading interactive preview...</p>
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+
+  {% if site.giscus and page.giscus_comments %}
+    {% include giscus.liquid %}
+  {% endif %}
+</div>
+
+{% if page.demo == 'novaland' %}
+  <script src="https://unpkg.com/vue@3.5.35/dist/vue.global.prod.js"></script>
+  <script defer src="{{ '/assets/js/novaland-demo.js' | relative_url }}"></script>
+{% endif %}
