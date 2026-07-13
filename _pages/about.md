@@ -25,8 +25,4 @@ I design online and laboratory experiments that combine human participants, algo
 
 Current projects include work on retail investor behaviour, order-flow data, hybrid financial markets, human-AI collaboration, and the POLITSOLID project on political solidarity, public-service quality, corruption, and citizen-state interaction.
 
-My Baltic Crisis module, a hybrid vignette design for measuring costly European solidarity, is available as a [PDF](/assets/pdf/baltic-crisis-module.pdf).
-
-My Kita paper, "Information, Empathy, and Solidarity in Kindergarten Financing," is available as a [PDF](/assets/pdf/kita-kindergarten-financing.pdf).
-
 I build experimental infrastructure primarily with Python, R, Stata, FastAPI, oTree, Vue, WebSockets, RabbitMQ, Git/GitHub, and database-backed behavioural logging.
