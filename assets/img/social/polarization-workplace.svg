@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#201c37"/><stop offset="1" stop-color="#5d435f"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="840" cy="230" r="72" fill="#ca6e6e"/><circle cx="1070" cy="230" r="72" fill="#62afa7"/>
+  <rect x="865" y="342" width="180" height="112" rx="18" fill="#f8f7f5"/><path d="M890 372h58v58h-58z" fill="#ca6e6e"/><path d="M962 372h58v58h-58z" fill="#62afa7"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#fff">
+    <text x="68" y="82" font-size="24" font-weight="700">Philipp Chapkovski · Research case study</text>
+    <text x="68" y="248" font-size="49" font-weight="700">What happens when political</text>
+    <text x="68" y="308" font-size="49" font-weight="700">disagreement enters teams?</text>
+    <text x="68" y="520" font-size="24" fill="#f0dfe8">Polarization at Workplace</text>
+  </g>
+</svg>

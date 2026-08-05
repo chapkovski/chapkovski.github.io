@@ -1,0 +1,59 @@
+---
+layout: default
+---
+<article class="project-showcase">
+  <header class="project-showcase__hero">
+    <div class="project-showcase__hero-copy">
+      <p class="project-showcase__kicker">Research case study</p>
+      <h1>{{ page.title }}</h1>
+      <p class="project-showcase__lede">{{ page.question }}</p>
+      {% if page.evidence_tags %}
+        <ul class="project-showcase__badges" aria-label="Project evidence">
+          {% for tag in page.evidence_tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+    <div class="project-showcase__hero-visual">
+      <img
+        class="project-showcase__hero-img"
+        src="{{ page.hero_image | relative_url }}"
+        alt="{{ page.hero_alt }}"
+        width="1200"
+        height="675"
+      >
+    </div>
+  </header>
+
+  <div class="project-showcase__body">
+    <section class="project-showcase__intro-grid" aria-labelledby="research-question">
+      <div>
+        <p class="project-showcase__eyebrow">Research question</p>
+        <h2 id="research-question">{{ page.question }}</h2>
+        <p>{{ page.overview }}</p>
+      </div>
+      <aside class="project-showcase__fact-panel" aria-label="Project facts">
+        <dl>
+          <div>
+            <dt>Status</dt>
+            <dd>{{ page.status }}</dd>
+          </div>
+          <div>
+            <dt>Design</dt>
+            <dd>{{ page.methods }}</dd>
+          </div>
+          <div>
+            <dt>My role</dt>
+            <dd>{{ page.role }}</dd>
+          </div>
+          <div>
+            <dt>Evidence</dt>
+            <dd>{{ page.evidence }}</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+    {{ content }}
+  </div>
+</article>

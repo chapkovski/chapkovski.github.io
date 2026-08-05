@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Synchronous workplace-polarization experiment</title>
+  <desc id="desc">Two partners receive divided information, communicate through a platform, and produce a joint task outcome.</desc>
+  <rect width="1200" height="620" rx="24" fill="#f2eef2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="68" y="70" font-size="22" font-weight="700" fill="#382e48">Synchronous collaboration workflow</text>
+    <circle cx="188" cy="218" r="56" fill="#ca6e6e"/><circle cx="188" cy="194" r="19" fill="#f7eee3"/><path d="M150 244c9-35 22-50 38-50s29 15 38 50" fill="#f7eee3"/>
+    <circle cx="1012" cy="218" r="56" fill="#62afa7"/><circle cx="1012" cy="194" r="19" fill="#f7eee3"/><path d="M974 244c9-35 22-50 38-50s29 15 38 50" fill="#f7eee3"/>
+    <text x="141" y="304" font-size="17" font-weight="700" fill="#563f58">Partner A</text><text x="965" y="304" font-size="17" font-weight="700" fill="#385f5d">Partner B</text>
+    <rect x="112" y="338" width="152" height="98" rx="14" fill="#fff" stroke="#d6c9d3" stroke-width="3"/><text x="144" y="380" font-size="15" fill="#563f58">Information</text><text x="162" y="407" font-size="28" font-weight="700" fill="#ca6e6e">A</text>
+    <rect x="936" y="338" width="152" height="98" rx="14" fill="#fff" stroke="#d6c9d3" stroke-width="3"/><text x="968" y="380" font-size="15" fill="#385f5d">Information</text><text x="986" y="407" font-size="28" font-weight="700" fill="#62afa7">B</text>
+    <rect x="420" y="148" width="360" height="310" rx="22" fill="#fff" stroke="#d6c9d3" stroke-width="3"/>
+    <text x="470" y="194" font-size="18" font-weight="700" fill="#382e48">Interaction platform</text>
+    <rect x="468" y="228" width="264" height="44" rx="12" fill="#eadfe8"/><text x="500" y="256" font-size="15" fill="#5b4b60">Partner information condition</text>
+    <rect x="468" y="294" width="196" height="42" rx="12" fill="#f1e6e6"/><text x="492" y="321" font-size="15" fill="#68494f">Message from A</text>
+    <rect x="536" y="354" width="196" height="42" rx="12" fill="#e2efed"/><text x="560" y="381" font-size="15" fill="#3d6561">Message from B</text>
+    <rect x="468" y="414" width="264" height="20" rx="10" fill="#334754"/>
+    <path d="M264 386h130" stroke="#7d657d" stroke-width="7" stroke-linecap="round"/><path d="m386 369 24 17-24 17" fill="none" stroke="#7d657d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M936 386H806" stroke="#5c817d" stroke-width="7" stroke-linecap="round"/><path d="m814 369-24 17 24 17" fill="none" stroke="#5c817d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="420" y="500" width="360" height="62" rx="18" fill="#382e48"/><text x="486" y="539" font-size="17" font-weight="700" fill="#fff">Joint accuracy and efficiency</text>
+  </g>
+</svg>

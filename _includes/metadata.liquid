@@ -15,6 +15,7 @@
 {% endif %}
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% assign metadata_description = page.description | default: site.description | strip_newlines | strip %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
@@ -39,7 +40,10 @@
   {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="description" content="{{ metadata_description }}">
+{% if page.noindex %}
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+{% endif %}
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 {% endif %}
@@ -52,23 +56,34 @@
 {% endif %}
 
 {% if site.serve_og_meta %}
+  {% assign selected_og_image = page.og_image | default: site.og_image %}
+  {% if page.url == '/' or page.title == null or page.title == '' or page.title == 'blank' %}
+    {% assign social_title = title %}
+  {% else %}
+    {% capture social_title %}{{ page.title }} | {{ title }}{% endcapture %}
+  {% endif %}
+  {% if selected_og_image contains '://' %}
+    {% assign og_image_url = selected_og_image %}
+  {% else %}
+    {% assign og_image_url = selected_og_image | relative_url | prepend: site.url %}
+  {% endif %}
   <!-- OpenGraph -->
   <meta property="og:site_name" content="{{ title }}">
   <meta property="og:type" content="{% if is_blog_post %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ title }} | {{ page.title }}{% else %}{{ title }}{% endif %}">
+  <meta property="og:title" content="{{ social_title }}">
   <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.og_image or site.og_image %}
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+  <meta property="og:description" content="{{ metadata_description }}">
+  {% if selected_og_image %}
+    <meta property="og:image" content="{{ og_image_url }}">
   {% endif %}
   <meta property="og:locale" content="{{ site.lang }}">
 
   <!-- Twitter card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.og_image or site.og_image %}
-    <meta name="twitter:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}{{ site.og_image }}{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ social_title }}">
+  <meta name="twitter:description" content="{{ metadata_description }}">
+  {% if selected_og_image %}
+    <meta name="twitter:image" content="{{ og_image_url }}">
   {% endif %}
   {% if site.x_username %}
     <meta name="twitter:site" content="@{{ site.x_username }}">
@@ -76,7 +91,7 @@
   {% endif %}
 {% endif %}
 
-{% if site.serve_schema_org %}
+{% if site.serve_schema_org and page.noindex != true %}
   <!-- Schema.org -->
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
@@ -229,7 +244,7 @@
         },
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
         "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+        "description": "{{ metadata_description }}",
         "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
         {% if sameaslinks != blank %}
         "sameAs": {{ sameaslinks }},

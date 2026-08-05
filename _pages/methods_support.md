@@ -6,6 +6,7 @@ description: Independent support for survey and behavioural experiment design, i
 nav: false
 nav_order: 7
 sitemap: false
+noindex: true
 ---
 
 I take on a limited amount of external methods work for research teams, public-sector organisations, and evidence-focused companies. I help turn a research question, draft instrument, or difficult pilot into a design that can be implemented and tested reliably.

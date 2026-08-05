@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102a36"/><stop offset="1" stop-color="#1c5f62"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="210" r="88" fill="#f2e8d9"/><path d="M854 518c20-160 75-230 146-230s126 70 146 230" fill="#65b5ad" opacity=".84"/>
+  <rect x="760" y="135" width="230" height="320" rx="24" fill="#f7faf8" opacity=".92"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#fff">
+    <text x="68" y="82" font-size="24" font-weight="700">Philipp Chapkovski · Research case study</text>
+    <text x="68" y="264" font-size="51" font-weight="700">Who contributes to improve</text>
+    <text x="68" y="324" font-size="51" font-weight="700">a shared recommender?</text>
+    <text x="68" y="520" font-size="24" fill="#d7e9e5">Political Alignment in Recommendations</text>
+  </g>
+</svg>

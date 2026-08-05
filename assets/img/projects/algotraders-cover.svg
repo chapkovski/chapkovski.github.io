@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Algotraders</title>
+  <desc id="desc">Market information, order-book depth, and a trading decision interface.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#131d31"/><stop offset="1" stop-color="#294d66"/></linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse"><path d="M56 0H0V56" fill="none" stroke="#dceaf1" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <rect x="116" y="104" width="968" height="468" rx="28" fill="#f7fafb"/>
+  <rect x="116" y="104" width="968" height="58" rx="28" fill="#dfe9ed"/>
+  <circle cx="158" cy="133" r="8" fill="#d36c5f"/><circle cx="184" cy="133" r="8" fill="#d4a354"/><circle cx="210" cy="133" r="8" fill="#5aaf89"/>
+  <rect x="158" y="200" width="510" height="322" rx="16" fill="#eef3f4"/>
+  <path d="M190 432c70-40 104-20 151-96 46-75 91 29 145-56 51-80 91-8 150-54" fill="none" stroke="#2c7f80" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M190 466h440M190 396h440M190 326h440M190 256h440" stroke="#9fb2b8" stroke-opacity=".4"/>
+  <rect x="708" y="200" width="332" height="322" rx="16" fill="#eef3f4"/>
+  <rect x="744" y="238" width="114" height="34" rx="7" fill="#d66b63" opacity=".88"/><rect x="890" y="238" width="114" height="34" rx="7" fill="#5aaf89" opacity=".88"/>
+  <g fill="#d66b63"><rect x="760" y="304" width="194" height="18" rx="5"/><rect x="788" y="338" width="166" height="18" rx="5"/><rect x="822" y="372" width="132" height="18" rx="5"/></g>
+  <g fill="#5aaf89"><rect x="760" y="420" width="132" height="18" rx="5"/><rect x="760" y="454" width="166" height="18" rx="5"/><rect x="760" y="488" width="194" height="18" rx="5"/></g>
+  <path d="M974 296v212" stroke="#7b9299" stroke-width="3" stroke-dasharray="6 8"/>
+</svg>

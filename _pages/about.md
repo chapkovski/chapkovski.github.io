@@ -13,16 +13,29 @@ profile:
     <p><a href="https://maps.app.goo.gl/vEFNTLriCdGz3tfs7">Forsthausweg 2</a></p>
     <p>Duisburg 47057</p>
 
-
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral researcher at the University of Duisburg-Essen. My work sits at the intersection of **behavioural economics**, **finance**, **computational social science**, and **political science**.
+I am a postdoctoral researcher at the University of Duisburg-Essen working at the intersection of **behavioural economics**, **political science**, **finance**, and **computational social science**. I study how information and institutional environments shape cooperation, trust, and decision-making.
 
-I design online and laboratory experiments that combine human participants, algorithmic agents, real-time interaction, API-based workflows, and structured behavioural data pipelines. Substantively, I study trading platforms and financial technology, information avoidance, political polarisation, cooperation, solidarity, and behavioural responses to digital and institutional environments.
+My research combines comparative surveys and behavioural experiments with the design of digital research platforms for real-time interaction, markets, and algorithmic systems.
 
-Current projects include work on retail investor behaviour, order-flow data, hybrid financial markets, human-AI collaboration, and the POLITSOLID project on political solidarity, public-service quality, corruption, and citizen-state interaction.
+I am open to [selected collaborations](mailto:chapkovski@gmail.com?subject=Research%20collaboration%20enquiry) requiring survey, experimental-design, or research-platform expertise.
 
-I build experimental infrastructure primarily with Python, R, Stata, FastAPI, oTree, Vue, WebSockets, RabbitMQ, Git/GitHub, and database-backed behavioural logging.
+<section class="homepage-feature" aria-labelledby="homepage-feature-title">
+  <div class="homepage-feature__visual">
+    <img src="{{ '/assets/img/projects/political-alignment-cover.svg' | relative_url }}" alt="Editorial diagram of two users contributing ratings to a shared recommender system" width="1200" height="675">
+  </div>
+  <div class="homepage-feature__copy">
+    <p class="homepage-feature__kicker">Featured project</p>
+    <h2 id="homepage-feature-title"><a href="{{ '/projects/recommender_systems/' | relative_url }}">Who contributes to improve a shared recommender?</a></h2>
+    <p>An incentivised experiment treating politically aligned recommendations as a collective-action problem.</p>
+    <ul class="project-card-badges" aria-label="Project evidence">
+      <li>Online experiment</li>
+      <li>Research platform</li>
+      <li>Ongoing</li>
+    </ul>
+  </div>
+</section>

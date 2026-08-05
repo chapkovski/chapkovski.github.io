@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Political Alignment in Recommendations</title>
+  <desc id="desc">Two users contribute ratings to a shared recommender system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102a36"/><stop offset="1" stop-color="#1c5f62"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#d9eee9" stroke-opacity=".07"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="208" cy="238" r="74" fill="#f2e8d9"/>
+  <path d="M92 492c15-119 60-178 116-178s101 59 116 178" fill="#d49552" opacity=".95"/>
+  <circle cx="992" cy="238" r="74" fill="#f2e8d9"/>
+  <path d="M876 492c15-119 60-178 116-178s101 59 116 178" fill="#65b5ad" opacity=".95"/>
+  <rect x="420" y="126" width="360" height="424" rx="28" fill="#f7faf8"/>
+  <rect x="454" y="168" width="292" height="42" rx="12" fill="#dce9e5"/>
+  <rect x="454" y="238" width="196" height="22" rx="8" fill="#1c5f62" opacity=".85"/>
+  <rect x="454" y="278" width="250" height="18" rx="7" fill="#9db9b2"/>
+  <rect x="454" y="314" width="224" height="18" rx="7" fill="#9db9b2"/>
+  <circle cx="498" cy="404" r="26" fill="#d49552"/>
+  <circle cx="568" cy="404" r="26" fill="#d49552" opacity=".72"/>
+  <circle cx="638" cy="404" r="26" fill="#65b5ad" opacity=".72"/>
+  <circle cx="708" cy="404" r="26" fill="#65b5ad"/>
+  <rect x="492" y="468" width="216" height="38" rx="19" fill="#163f48"/>
+  <path d="M324 304C376 304 388 338 420 338M780 338c32 0 44-34 96-34" fill="none" stroke="#f2e8d9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="368" cy="304" r="9" fill="#d49552"/>
+  <circle cx="832" cy="304" r="9" fill="#65b5ad"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Polarization at Workplace</title>
+  <desc id="desc">Two participants exchange different pieces of information to complete a team task.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#201c37"/><stop offset="1" stop-color="#5d435f"/></linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" fill="none" stroke="#f3e9ee" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <circle cx="232" cy="216" r="72" fill="#f2e8d9"/>
+  <path d="M108 520c16-138 64-207 124-207s108 69 124 207" fill="#ca6e6e"/>
+  <circle cx="968" cy="216" r="72" fill="#f2e8d9"/>
+  <path d="M844 520c16-138 64-207 124-207s108 69 124 207" fill="#62afa7"/>
+  <rect x="430" y="138" width="340" height="398" rx="26" fill="#f8f7f5"/>
+  <rect x="470" y="180" width="260" height="48" rx="12" fill="#e8e1e6"/>
+  <path d="M495 292h94v94h-94z" fill="#ca6e6e"/><path d="M611 292h94v94h-94z" fill="#62afa7"/>
+  <path d="M495 408h210v72H495z" fill="#273a49"/>
+  <path d="M356 238c54 0 62 88 124 88M844 238c-54 0-62 88-124 88" fill="none" stroke="#f2e8d9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M370 448c54 0 68-38 110-38M830 448c-54 0-68-38-110-38" fill="none" stroke="#f2e8d9" stroke-opacity=".7" stroke-width="6" stroke-linecap="round" stroke-dasharray="9 13"/>
+</svg>
