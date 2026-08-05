@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic market experiment architecture</title>
+  <desc id="desc">Trader decisions pass to a market engine and order book, then to structured behavioural records.</desc>
+  <rect width="1200" height="620" rx="24" fill="#eef3f4"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="70" y="72" font-size="22" font-weight="700" fill="#20323d">Synthetic experimental session</text>
+    <rect x="70" y="126" width="248" height="338" rx="18" fill="#fff" stroke="#c8d5d8" stroke-width="3"/>
+    <text x="98" y="171" font-size="18" font-weight="700" fill="#294d66">Participant interface</text>
+    <rect x="98" y="211" width="192" height="48" rx="10" fill="#dce8eb"/><text x="118" y="242" font-size="15" fill="#314b58">Market information</text>
+    <rect x="98" y="280" width="88" height="54" rx="10" fill="#d66b63"/><text x="125" y="313" font-size="15" font-weight="700" fill="#fff">Sell</text>
+    <rect x="202" y="280" width="88" height="54" rx="10" fill="#5aaf89"/><text x="234" y="313" font-size="15" font-weight="700" fill="#fff">Buy</text>
+    <rect x="98" y="356" width="192" height="72" rx="10" fill="#f4f7f7" stroke="#d3dfe1"/><text x="118" y="387" font-size="14" fill="#51676f">Positions · balance</text><text x="118" y="410" font-size="14" fill="#51676f">timing · feedback</text>
+    <rect x="458" y="126" width="284" height="338" rx="18" fill="#1e3e52"/>
+    <text x="490" y="171" font-size="18" font-weight="700" fill="#fff">Market engine</text>
+    <rect x="490" y="211" width="220" height="72" rx="12" fill="#315d73"/><text x="520" y="254" font-size="16" fill="#fff">Order validation</text>
+    <rect x="490" y="303" width="220" height="72" rx="12" fill="#315d73"/><text x="531" y="346" font-size="16" fill="#fff">Order matching</text>
+    <rect x="490" y="395" width="220" height="42" rx="12" fill="#d6a354"/><text x="551" y="422" font-size="15" font-weight="700" fill="#27343b">Order book</text>
+    <rect x="882" y="126" width="248" height="338" rx="18" fill="#fff" stroke="#c8d5d8" stroke-width="3"/>
+    <text x="910" y="171" font-size="18" font-weight="700" fill="#294d66">Research records</text>
+    <rect x="910" y="211" width="192" height="54" rx="10" fill="#dce8eb"/><text x="936" y="244" font-size="15" fill="#314b58">Orders and trades</text>
+    <rect x="910" y="286" width="192" height="54" rx="10" fill="#dce8eb"/><text x="936" y="319" font-size="15" fill="#314b58">Market states</text>
+    <rect x="910" y="361" width="192" height="54" rx="10" fill="#dce8eb"/><text x="936" y="394" font-size="15" fill="#314b58">Behavioural outcomes</text>
+    <path d="M318 295h116" stroke="#517581" stroke-width="7" stroke-linecap="round"/><path d="m426 278 24 17-24 17" fill="none" stroke="#517581" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M742 295h116" stroke="#517581" stroke-width="7" stroke-linecap="round"/><path d="m850 278 24 17-24 17" fill="none" stroke="#517581" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="546" font-size="15" fill="#61777e">All values and interface elements in this diagram are illustrative.</text>
+  </g>
+</svg>

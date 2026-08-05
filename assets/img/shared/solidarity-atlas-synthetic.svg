@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic Solidarity Atlas dashboard</title>
+  <desc id="desc">A research dashboard preview with a stylised European map and synthetic comparison panels.</desc>
+  <rect width="1200" height="720" rx="22" fill="#eef3f2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="0" y="0" width="1200" height="76" rx="22" fill="#173f46"/>
+    <text x="42" y="48" font-size="24" font-weight="700" fill="#fff">Solidarity Atlas</text>
+    <rect x="1000" y="22" width="156" height="34" rx="17" fill="#d5a65a"/><text x="1028" y="44" font-size="13" font-weight="700" fill="#27383c">SYNTHETIC DATA</text>
+    <rect x="34" y="108" width="260" height="578" rx="16" fill="#fff" stroke="#cfdcda"/>
+    <text x="62" y="150" font-size="15" font-weight="700" fill="#2e4b50">Comparison controls</text>
+    <text x="62" y="198" font-size="12" fill="#6d7e7d">MEASURE</text><rect x="62" y="212" width="204" height="44" rx="8" fill="#edf2f1"/><text x="78" y="240" font-size="14" fill="#344f52">Institutional trust</text>
+    <text x="62" y="300" font-size="12" fill="#6d7e7d">GROUP</text><rect x="62" y="314" width="204" height="44" rx="8" fill="#edf2f1"/><text x="78" y="342" font-size="14" fill="#344f52">All respondents</text>
+    <text x="62" y="402" font-size="12" fill="#6d7e7d">DISPLAY</text>
+    <circle cx="76" cy="438" r="10" fill="#32817c"/><text x="96" y="443" font-size="14" fill="#344f52">Country comparison</text>
+    <circle cx="76" cy="478" r="10" fill="#d5a65a"/><text x="96" y="483" font-size="14" fill="#344f52">Design metadata</text>
+    <rect x="326" y="108" width="536" height="360" rx="16" fill="#fff" stroke="#cfdcda"/>
+    <text x="356" y="150" font-size="15" font-weight="700" fill="#2e4b50">Comparative view</text>
+    <g fill="#b8d4d0" stroke="#fff" stroke-width="5"><path d="M510 194l60-20 38 34-18 44 35 28-22 64-48 8-30-37-53-8-18-52z"/><path d="M644 207l59 9 28 46-20 34 26 45-41 39-55-22-18-62 31-40z"/><path d="M482 361l46-22 41 26-5 58-53 18-42-35z"/></g>
+    <g fill="#32817c"><circle cx="528" cy="248" r="13"/><circle cx="667" cy="267" r="18"/><circle cx="524" cy="388" r="10"/></g>
+    <rect x="894" y="108" width="272" height="360" rx="16" fill="#fff" stroke="#cfdcda"/>
+    <text x="924" y="150" font-size="15" font-weight="700" fill="#2e4b50">Synthetic comparison</text>
+    <g fill="#32817c"><rect x="930" y="202" width="164" height="24" rx="8"/><rect x="930" y="258" width="112" height="24" rx="8"/><rect x="930" y="314" width="184" height="24" rx="8"/><rect x="930" y="370" width="136" height="24" rx="8"/></g>
+    <g fill="#6d7e7d" font-size="12"><text x="930" y="194">Country A</text><text x="930" y="250">Country B</text><text x="930" y="306">Country C</text><text x="930" y="362">Country D</text></g>
+    <rect x="326" y="500" width="840" height="186" rx="16" fill="#fff" stroke="#cfdcda"/>
+    <text x="356" y="542" font-size="15" font-weight="700" fill="#2e4b50">Design and harmonisation notes</text>
+    <rect x="356" y="574" width="220" height="70" rx="10" fill="#e4efed"/><rect x="598" y="574" width="220" height="70" rx="10" fill="#f4eadb"/><rect x="840" y="574" width="296" height="70" rx="10" fill="#e4efed"/>
+  </g>
+</svg>
