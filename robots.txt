@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /unlisted/182f4a4c5ba7fe7ce58a/
 
 Sitemap: https://chapkovski.com/sitemap.xml
